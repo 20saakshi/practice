@@ -1,39 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<!-- 
+TODO: Change the background color for each device
+[lightsalmon] Mobile Devices: 319px — 480px
+[powderblue] iPads and Tablets: 481px — 1200px
+[limegreen] Laptops: 1201px — 1600px
+[seagreen] Desktops: 1601px and more
+-->
 
 <head>
-  <title>CSS Positioning Exercise</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  
+  <title>Media Query</title>
   <style>
-    /* Write your code here */
-    .blue-box{
-      background-color: blue;
-      height: 300px;
-      width: 500px;
-      position: relative;
-      right: 300px;
-      left: 200px;
-      top: 200px;
+    body {
+      background-color: aquamarine;
     }
-
-    .red-circle{
-      background-color: tomato;
-      left: 250px;
-      top: 150px;
-      position: absolute;
-      border-radius: 50%;
-      width: 200px;
-      height: 200px;
+    @media (max-width: 319px) and (min-width: 480px){
+      body{
+        background-color: lightsalmon;
+      }
     }
-
+    @media (max-width: 481px) and (min-width: 1200px) {
+      body{
+        background-color: powderblue;
+      }
+    }
+    @media (max-width:1201px) and (min-width: 1600px){
+      body{
+        background-color: limegreen;
+      }
+    }
+    @media (max-width: 1601px){
+      body{
+        background-color: seagreen;
+      }
+    }
+   
   </style>
 </head>
 
 <body>
-  <div class="blue-box">
-    <div class="red-circle">
-    </div>
-  </div>
-
 </body>
 
 </html>
