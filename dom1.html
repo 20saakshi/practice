@@ -1,0 +1,238 @@
+<!--var age = prompt("Enter your Age")
+
+if(age >= 18){
+    console.log("You can vote")
+}
+else{
+    console.log("you are not Eligible")
+}
+
+//document.write("Able to vote")
+-->
+<!--
+<html>
+    <head>
+          function show(){
+               
+               /* a = confirm("Thank you for clicking button!")
+
+                if(a == true){
+                    document.write("You Clicked Ok Button!")
+                }else{
+                    document.write("You Clicked Cancle Button!")
+                }*/
+
+            }
+
+    </head>
+    <body>
+        <form id="frm">
+            Num1: <input type="text" name="n1"><br>
+            Num2: <input type="text" name="n2"><br>
+            result: <input type="text" name="res" disabled><br>
+
+            <input type="button" name="Addition" onclick="sum()">
+            <input type="button" name="Subtraction" onclick="sub()">
+            <input type="button" name="Multiplication" onclick="mul()">
+            <input type="button" name="Division" onclick="div()">
+        </form>
+        <script>
+              function sum(){
+                var n1,n2;
+                if(frm.n1.value == ""){
+                    alert("Enter N1")
+                    frm.n1.focus()
+                }else if(frm.n2.value == ""){
+                    alert("Enter N2")
+                    frm.n2.focus()
+                }else{
+                    num1  = parseInt(frm.n1.value)
+                    num2  = parseInt(frm.n2.value)
+                    rs  = num1 + num2
+                    frm.res.value = rs
+                }   
+            }
+        </script>
+      
+    </body>
+</html>
+-->
+
+<html>
+
+<body>
+    <p id="demo">Hello World</p>
+    <button onclick="myfun()">Click Me!</button>
+
+    <script>
+        function myfun() {
+            x = document.getElementById("demo")
+            x.style.color = "red"
+        } 
+    </script>
+</body>
+
+</html>
+
+<html>
+
+<body>
+    <p id="myid">I am P Tag</p>
+    <button onclick="show()">Click Me</button>
+
+    <script>
+        function show() {
+            x = document.getElementById("myid")
+            x.style.color = "red"
+            x.style.backgroundcolor = 'yellow'
+        }
+    </script>
+</body>
+
+</html>
+
+
+<!--INNERTEXT It only get and set text values-->
+
+<!--GET VALUE-->
+
+<HTML>
+
+<body>
+    <p id="myid1"></p>
+    <button onclick="setc()">Set Content</button>
+
+    <script>
+        function setc() {
+            var x = document.getElementById("myid1")
+            x.innerText = "Dynamic Content Added"
+        }
+    </script>
+</body>
+</HTML>
+
+
+<html>
+<body>
+    <p id="demo1"></p>
+    <button onclick="myFunction()">Click Me!!</button>
+    <script type="text/javascript">
+        function myFunction() {
+            var x = document.getElementById("demo1");
+            x.innerText = "Dynamic Content Added";
+        }
+    </script>
+</body>
+
+</html>
+
+
+<!--INNERHTML  It will get and set text with Html Element-->
+
+<!--GET Value-->
+
+<html>
+    <body>
+        <p id="myid3"><b><i>I am P tag</i></b></p>
+        <button onclick="getcont()">Get Content</button>
+
+        <script>
+            function getcont(){
+                x = document.getElementById("myid")
+                data = x.innerHTML
+                document.write("Data is: " + data)
+                console.log("Data is: " + data)
+            }
+        </script>
+    </body>
+</html>
+
+<!--SET Value-->
+
+
+<html>
+    <body>
+        <p id="myid4"></p>
+        <button onclick="setC()">Set ContenT</button>
+        <script>
+            function setC(){
+                x = document.getElementById("myid4")
+                x.innerHTML = "<b><u>Dynamic Content Added<u></b>"
+            }
+        </script>
+    </body>
+</html>
+
+
+        <!--GET SET VALUE EXAMPLE-->
+
+        <html>
+            <body>
+                <p id="myid5">I am P tag</p>
+                <p id="myid6"></p>
+
+                <button onclick="getC()">Get</button>
+                <button onclick="SetC()">Set</button>
+
+                <script>
+                    function getC(){
+                        x = document.getElementById("myid5").innerHTML
+                        document.getElementById("myid6").innerText = x
+                    }
+
+                    function SetC(){
+                        x = document.getElementById("myid5")
+                        x.innerHTML = "Dynamic Content Added <br>"
+                    }
+                </script>
+            </body>
+        </html>
+
+        <!--TextBox Value GET-->
+
+        <html>
+            <body>
+                <br>
+                <br>
+                <input type="text" id="t1"/>
+                
+                <button onclick="getco()">Click Me</button>
+                <p id="ans"></p>
+
+                <script>
+                    function getco(){
+                        x = document.getElementById("t1")
+                        data = x.value
+                        document.getElementById("ans").innerText = data
+                    }
+                </script>
+            </body>
+        </html>
+
+        <!--SUM Example-->
+
+        <html>
+            <body>
+                No1: <input type="text" id="t2"/><br>
+                No2: <input type="text" id="t3"/><br>
+                <button onclick="getcontent()">Click Me</button>
+                <p id="ans1"></p>
+
+                <script>
+                    function getcontent(){
+                        x = document.getElementById("t2")
+                        y = document.getElementById("t3")
+                        a = x.value
+                        b = y.value
+                        c = parseInt(a) + parseInt(b)
+                        document.getElementById("ans1").innerText = "Sum is: " +c
+                    }
+                </script>
+            </body>
+        </html>
+
+
+
+
+
+                        

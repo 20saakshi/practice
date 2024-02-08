@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <script>
+          function demo(){
+                document.write("Hello Function")
+            }
+            demo()
+            //No Argument No return Value
+            function demo1(){
+                a = 10
+                b = 20
+                c = a+b
+                document.write("<br> Value is: " + c)
+            }
+            demo1()
+
+            //With Argument No Return Value
+
+            function demo2(a,b){
+                c = a + b;
+                document.write("<br> Value is: " + c)
+            }
+            demo2(10,10)
+
+            //With Argument and Return Value
+
+            function demo3(a,b){
+                c = a + b;
+                return c;
+            }
+            var z = demo3(50,50)
+            document.write("<br>Value is: " + z)
+          
+
+   /** function isLeap(year) {
+    
+        if(year % 4 === 0){
+            if(year % 100 === 0){
+                if(year % 400 === 0){
+                    return "Leap Year"
+                }else{
+                    return "Not Leap Year"
+                }
+            }else{
+                return "Not Leap Year"
+            }
+        }else{
+            return "Not Leap Year"
+        }
+    }**/
+        </script>
+    </head>
+</html>
+
+
+

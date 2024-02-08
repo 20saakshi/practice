@@ -1,0 +1,41 @@
+<html>
+    <body>
+        <script>
+            //LENGTH
+            var a = new Array("10","20","30","50","40")
+            document.write(a.length)
+
+            //COCAT
+            a = new Array("10","20","30","50","40")
+            b = new Array("60","70")
+            c = new Array("90")
+            document.write("<br>", a.concat(b) + "<br>")
+            document.write(a.concat(b,c))
+
+            //FLAT
+            a = [23,44,[55,53],[12,44,[56,87]]];
+            
+            newarray = a.flat()
+         
+            document.write("<br>New array: " + newarray)
+
+            //FILL
+            a = new Array("10","20","50","40")
+            b = new Array("10","20","50","40")
+            c = new Array("10","20","50","40")
+            document.write("<br>",a.fill("js") + "<br>")
+            document.write("<br>",a.fill("js",1) + "<br>")
+            document.write("<br>",a.fill("js",0,2) + "<br>")
+
+            //INCLUDES
+            a = new Array("10","20","hello","30")
+            document.write(a.includes("10") + "<br>")
+            document.write(a.includes("10",1) + "<br>")
+            document.write(a.includes("Hello") + "<br>")//gives false because case sensitive
+
+            //INDEXOF   
+            a = new Array("10","20","40","30");
+            document.write("<br>",a.indexOf("40") + "<br>")
+        </script>
+    </body>
+</html>

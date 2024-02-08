@@ -1,0 +1,31 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form name="frm">
+            Enter value:<input type="text" name="fnum"><br>
+            Enter value:<input type="text" name="snum"><br>
+            Enter value:<input type="text" name="tnum"><br>
+            <button onclick="demo()">Submit</button>
+            
+        </form>
+
+        <script>
+            function demo(){
+                var a = document.getElementsByName("fnum")[0].value
+                var b = document.getElementsByName("snum")[0].value
+                var c = document.getElementsByName("tnum")[0].value
+
+                if(a<b && a<c){
+                    alert("smallest number " +a)
+                }else if(b<a && b<c){
+                    alert("smallest number is " +b)
+                }else{
+                    alert("smallest number is " +c)
+                }
+            }
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+<body>
+    <script>
+        function overfun(x){
+            x.style.height = '20px';
+            x.style.width = '100px';
+            x.style.backgroundColor = 'red';
+        }
+        function outfun(x){
+            x.style.height = '20px';
+            x.style.width = '100px';
+            x.style.backgroundColor = 'yellow';
+        }
+    </script>
+    <div onmouseover="overfun(this)" 
+    onmouseout="outfun(this)">Hello World.</div>
+</body>
+</html>

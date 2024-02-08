@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <form name="frm" onsubmit="ValidateForm()">
+            Enter Name: <input type="text" name="myname"><br><br>
+            <input type="submit" value="Submitdata">
+        </form>
+
+        <script>
+            function ValidateForm(){
+                var myname = frm.myname.value
+                if(myname == null || myname == ""){
+                    alert("Enter name")
+                    return false
+                }
+            }
+        </script>
+    </body>
+</html>

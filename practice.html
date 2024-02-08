@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>WebPage</title>
+    </head>
+    <body>
+        <form name="frm">
+           FirstName: <input type="text" name="FirstName" id="fname">
+           MiddleName: <input type="text" name="MiddleName" id="mname">
+           LastName: <input type="text" name="LastName" id="lname">
+           <button onclick="demo()">Submit</button>
+
+           <script>
+                function demo(){
+                    var fname = document.getElementById("fname").value
+                    var mname = document.getElementById("mname").value
+                    var lname = document.getElementById("lname").value
+                    
+                    var a = fname + " " + mname + " " + lname
+                    alert("Your fullname is: " +a)
+                }
+           </script>
+        </form>
+    </body>
+</html>

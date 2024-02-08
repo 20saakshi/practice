@@ -1,0 +1,17 @@
+        <!--getElementByClassName()-->
+
+<html>
+    <body>
+        <p class="demo">Hello world</p>
+        <p class="demo">Hello world</p>
+
+        <button onclick="myfun()">Click Me</button>
+
+        <script>
+            function myfun(){
+                x = document.getElementsByClassName("demo")
+                x[0].style.color = 'blue'
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+                        <!--* getElenetsByName   returns all the element of specified name.
+                            * the Html collection object represents a collection of nodes.
+                            * the nodes can be accessed by index numbers.
+                            * index starts at 0.
+                        -->
+
+        <html>
+            <body>
+                <script>
+                    function getcube(){
+                        num = document.getElementsByName("n1")[0].value
+                        alert(num * num * num)
+                    }
+                    </script>
+                        <form name="frm">
+                            Enter no: <input type="number" name="n1"/><br>
+                            <input type="button" value="cube" onclick="getcube()"/>
+                        </form>
+            </body>                    
+        </html>        
+                        
+                    
+
+        <html>
+            <body>
+                No1: <input type="text" name="txt1"/><br>
+                No2: <input type="text" name="txt2"/><br>
+                <button onclick="getContent()">Click Me</button>
+                <p id="ans3"></p>
+            <script>
+                function getContent(){
+                var a = document.getElementsByName("txt1")[0].value;
+                var b = document.getElementsByName("txt2")[0].value;
+                var c = parseInt(a) + parseInt(b);
+                document.getElementById("ans3").innerText = "Sum is: " + c;
+            }
+            </script>
+            </body>
+        </html>

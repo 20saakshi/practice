@@ -1,0 +1,149 @@
+<html>
+    <body>
+
+            <!--GET DATA PROGRAM USING FORM TAG IN HTML-->
+
+    <!--
+        <form id="frm">
+            Name : <input type="text" name="t1"/>
+            <input type="button" value="getdata" onclick="getdata()"/>
+        </form>
+
+        <script>
+            function getdata(){
+                var a = frm.t1.value;
+                document.write("A value is ",a)
+            }
+        </script>
+    -->
+    <!--
+    <form id="frm">
+        n1: <input type="text" name="t1"/>
+        n2: <input type="text" name="t2"/>
+
+        <input type="button" onclick="printdata()" value="Click Me"/>
+    </form>
+
+    <script>
+        function printdata(){
+            a = frm.t1.value
+            b = frm.t2.value
+            c = parseInt(a) + parseInt(b)
+            document.write("A value is ",a,"<br>B value is ",b,"<br>Sum is ",c)
+        }     
+    </script>
+    -->
+
+<!--GET AND SET VALUES-->
+
+<!--
+    <form id="frm">
+        Name: <input type="text" name="t1"/>
+        Value: <input type="text" name="t2" disabled/>
+        <input type="button" value="click Me" onclick="printdata()"/>
+    </form>
+
+    <script>
+        function printdata(){
+            a = frm.t1.value
+            
+            frm.t2.value = a
+        }
+    </script>
+-->
+        <!--SET SUM VALUE IN TEXTBOX-->
+        <!--
+        <form id="frm">
+            N1: <input type="text" name="t1"/> <br/>
+            N2: <input type="text" name="t2"/> <br/>
+            Sum: <input type="text" name="t3" disabled/> <br/>
+            <input type="button" value="click Me" onclick="printdata()"/>
+        </form>
+
+        <script>
+            function printdata(){
+                a = frm.t1.value
+                b = frm.t2.value
+                c = parseInt(a) + parseInt(b);
+                frm.t3.value = c
+            }
+        </script>
+        -->
+
+
+   <!--SET SUM VALUE IN TEXTBOX-->
+
+        <form name="frm">
+            num1: <input type="text" name="n1"><br>
+            num2: <input type="text" name="n2"><br>
+            result: <input type="text" name="res" disabled><br>
+            <input type="button" value="Addition" onclick="add()" />
+            <input type="button" value="Subtraction" onclick="sub()" />
+            <input type="button" value="Multiplication" onclick="mul()" />
+            <input type="button" value="Division" onclick="div()" />
+        </form>
+        <script>
+            function add(){
+                 var n1,n2;
+                if(frm.n1.value == ""){
+                    alert("Enter N1:")
+                    frm.n1.focus()
+                }else if(frm.n2.value == ""){
+                    alert("Enter N2:")
+                    frm.n2.focus()
+                }else{
+                    num1 = parseInt(frm.n1.value)
+                    num2 = parseInt(frm.n2.value)
+                    rs = num1 + num2
+                    frm.res.value = rs
+                }
+            }
+            function sub(){
+                 var n1,n2;
+                if(frm.n1.value == ""){
+                    alert("Enter N1:")
+                    frm.n1.focus()
+                }else if(frm.n2.value == ""){
+                    alert("Enter N2:")
+                    frm.n2.focus()
+                }else{
+                    num1 = parseInt(frm.n1.value)
+                    num2 = parseInt(frm.n2.value)
+                    rs = num1 - num2
+                    frm.res.value = rs
+                }
+            }
+            function mul(){
+                 var n1,n2;
+                if(frm.n1.value == ""){
+                    alert("Enter N1:")
+                    frm.n1.focus()
+                }else if(frm.n2.value == ""){
+                    alert("Enter N2:")
+                    frm.n2.focus()
+                }else{
+                    num1 = parseInt(frm.n1.value)
+                    num2 = parseInt(frm.n2.value)
+                    rs = num1 * num2
+                    frm.res.value = rs
+                }
+            }
+            function div(){
+                 var n1,n2;
+                if(frm.n1.value == ""){
+                    alert("Enter N1:")
+                    frm.n1.focus()
+                }else if(frm.n2.value == ""){
+                    alert("Enter N2:")
+                    frm.n2.focus()
+                }else{
+                    num1 = parseInt(frm.n1.value)
+                    num2 = parseInt(frm.n2.value)
+                    rs = num1 / num2
+                    frm.res.value = rs
+                }
+            }
+        </script>
+    </body>
+
+</html>

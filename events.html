@@ -1,0 +1,107 @@
+<html>
+   
+    <!--EXAMPLE - 2
+
+
+    <body>
+        <script>
+            function overfun(){
+                alert("mouse over function")
+            }
+            function outfun(){
+                alert("mouse out function")
+            }
+        </script>
+        <button onmouseover="overfun()">Button 1</button>
+        <button onmouseout="outfun()">Button 2</button>
+    </body>
+    -->
+
+    <!-- EXAMPLE - 3 
+
+    <body>
+        <marquee onmouseover="this.stop()" onmouseout="this.start()" 
+        style = "background-color: bisque;">This is News</marquee>
+    </body>
+    -->
+
+
+    <!-- EXAMPLE - 4 
+
+    <body>
+        <script>
+            function overfun(x){
+                x.style.height = 40
+                x.style.width = 100
+            }
+            function outfun(x){
+                x.style.height = 40
+                x.style.width = 100
+            }
+        </script>
+        <button onmouseover="overfun(this)">Button 1</button>
+        <button onmouseout="outfun(this)">Button 2</button>
+    </body>
+    -->
+
+
+        <!-- EXAMPLE - 5 
+
+        <body>
+            <script>
+                function overfun(x){
+                    x.style.height = '20px'
+                    x.style.width = '100px'
+                    x.style.backgroundcolor = 'red'
+                }
+                function outfun(x){
+                    x.style.height = '20px'
+                    x.style.width = '100px'
+                    x.style.backgroundcolor = 'yellow'
+                }
+            </script>
+            <div onmouseover="overfun(this)" 
+            onmouseout="outfun(this)">Hello World.</div>
+        </body>
+        -->
+
+
+        <!--ONMOUSEDOWN AND ONMOUSEUP FUNCTION-->
+
+        <!-- EXAMPLE - 1
+        <head>
+            <script>
+                function big(x){
+                    x.style.backgroundColor = 'red'
+                    x.style.fontSize = '100px'
+                    x.innerHTML = 'Release Me'
+                }
+                function small(x){
+                    x.style.backgroundColor = 'yellow'
+                    x.style.fontSize = '50px'
+                    x.innerHTML = "Click Me"
+                }
+            </script>
+        </head>
+        <body>
+            <div onmousedown="big(this)" 
+            onmouseup="small(this)">Hello World</div>
+        </body>
+        -->
+
+        <!-- EXAMPLE - 2 --> 
+
+        <head>
+            <script>
+                function big(x){
+                    x.style.backgroundColor = 'red'
+                    x.style.fontsize = '100px'
+                    x.innerHTML = "Hii..."
+                }
+            </script>
+
+        </head>
+        <body>
+            <div onmouseover="big(this)">Hello World</div>
+        </body>
+</html>
