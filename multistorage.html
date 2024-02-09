@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <script>
+            function save(){
+                localStorage.setItem("name","sakshi")
+                localStorage.setItem("age",22)
+                localStorage.setItem("Gender","Female")
+                localStorage.setItem("MobileNo",7575818672)
+                document.getElementById("myid").innerText = "LocalStorage is set"
+            }
+            function get(){
+                a = localStorage.getItem("name")
+                b = localStorage.getItem("age")
+                c = localStorage.getItem("Gender")
+                d = localStorage.getItem("MobileNo")
+                document.getElementById("myid").innerText = "LocalStorage is " + a 
+                document.getElementById("myid").innerText = "LocalStorage is " + b
+                document.getElementById("myid").innerText = "LocalStorage is " + c
+                document.getElementById("myid").innerText = "LocalStorage is " + d
+            }
+            function remove(){
+                localStorage.removeItem("name")
+                localStorage.removeItem("age")
+                localStorage.removeItem("Gender")
+                localStorage.removeItem("MobileNo")
+                document.getElementById("myid").innerText = "LocalStorage value is removed" 
+            }
+        </script>
+    </head>
+    <body>
+        <p id="myid"></p>
+        <input type="button" onclick="save()" value="Save">
+        <input type="button" onclick="get()" value="Get">
+        <input type="button" onclick="remove()" value="RemoveAll">
+    </body>
+</html>

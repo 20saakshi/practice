@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script>
+            function setdata(){
+                localStorage.setItem("name","sakshi")
+                localStorage.setItem("age","20")
+                document.getElementById("myid").innerHTML = "LocalStorage is set"
+            }
+            function getdata(){
+                var a = localStorage.getItem("name")
+                document.getElementById("myid").innerHTML = "LocalStorage value is " +a
+            }
+        </script>
+    </head>
+    <body>
+        <p id="myid">Hii</p>
+        <input type="button" onclick="setdata()" value="SET">
+        <input type="button" onclick="getdata()" value="GET">
+
+    </body>
+</html>

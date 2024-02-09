@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script>
+            function SaveData(){
+                localStorage.setItem("name","Sakshi")
+            }
+            function GetData(){
+                var a = localStorage.getItem("name")
+                console.log(a)
+            }
+            function RemoveData(){
+                localStorage.removeItem("name")
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="Save" onclick="SaveData()">
+        <input type="button" value="Get" onclick="GetData()">
+        <input type="button" value="Remove" onclick="RemoveData()">
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <script>
+            function save(){
+                localStorage.setItem("name" ,"sakshi")
+                localStorage.setItem("gender","Female")
+            }
+            function get(){
+                a = localStorage.getItem("name")
+                b = localStorage.getItem("gender")
+                console.log(a)
+                console.log(b)
+            }
+            function remove(){
+                localStorage.clear()
+                
+            }
+        </script>
+    </head>
+    <body>
+        <p id="mtid"></p>
+        <input type="button" onclick="save()" value="Save">
+        <input type="button" onclick="get()" value="Get">
+        <input type="button" onclick="remove()" value="RemoveAll">        
+    </body>
+</html>
